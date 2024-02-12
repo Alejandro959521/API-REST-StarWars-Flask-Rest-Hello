@@ -329,7 +329,7 @@ def delete_planet(planet_id,user_id):
         }), 500
     # Retorna status code indicando que todo salió bien, pero sin contenido
     # Revisar: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE#responses
-    return jsonify(None), 204
+    return jsonify(None ), 204
 
 
 @app.route("/usuario/<int:user_id>/favoritos/personajes/<int:personaje_id>", methods=["DELETE"])
